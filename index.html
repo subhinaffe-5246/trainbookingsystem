@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Train Booking System</h1>
+
+        <!-- Train Selection -->
+        <label for="train">Select Train:</label>
+        <select id="train">
+            <option value="Train A">Train A - $50</option>
+            <option value="Train B">Train B - $60</option>
+            <option value="Train C">Train C - $80</option>
+        </select>
+
+        <!-- Time Selection -->
+        <label for="time">Select Departure Time:</label>
+        <select id="time">
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="6:00 PM">6:00 PM</option>
+        </select>
+
+        <!-- Number of Tickets -->
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" min="1" value="1">
+
+        <!-- Book Button -->
+        <button onclick="bookTicket()">Book Ticket</button>
+
+        <!-- Booking Summary -->
+        <div id="summary" class="summary"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
